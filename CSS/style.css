@@ -45,6 +45,16 @@ body .subtitle {
   text-align: center;
 }
 
+body .bold {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+body .bold2 {
+  padding-top: 20px;
+}
+
 header {
   background-color: #EC715F;
   color: #FAFAFA;
@@ -172,4 +182,45 @@ header .container {
 
 .feature .container {
   width: 980px;
+}
+
+.strength {
+  display: flex;
+}
+
+.strength .box-icon {
+  font-size: 60px;
+  text-align: center;
+  display: block;
+}
+
+.strength .box-heading {
+  font-size: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.strength .box:nth-child(2) {
+  margin: 0 10px;
+}
+
+.profile .container {
+  width: 1024px;
+}
+
+.my-profile img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.my-profile .profile-left {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.my-profile .profile-right {
+  width: 50%;
+  float: right;
 }
