@@ -1,0 +1,166 @@
+@charset "UTF-8";
+body {
+  font-family: "Yu Gothic", "游ゴシック体";
+  line-height: 1.5;
+}
+
+body .clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+body .title {
+  font-size: 32px;
+}
+
+body .title::after {
+  content: "";
+  background-color: #EC715F;
+  height: 3px;
+  width: 70px;
+  display: block;
+  margin: 8px auto 0 auto;
+}
+
+body .subtitle {
+  font-size: 16px;
+  padding: 30px 0 30px 0;
+}
+
+header {
+  background-color: #EC715F;
+  color: #FAFAFA;
+  height: 70px;
+}
+
+header .container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.navbar img {
+  float: left;
+  height: 70px;
+}
+
+.navbar .nav-left {
+  float: right;
+}
+
+.navbar .nav-left .nav-item {
+  float: left;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: 70px;
+}
+
+.main-visual {
+  background-image: url(../img/mv.png);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  color: #FAFAFA;
+  text-align: center;
+}
+
+.main-visual .main-title {
+  font-size: 64px;
+  margin-bottom: 10px;
+  padding-top: 200px;
+}
+
+.main-visual .main-subtitle {
+  font-size: 20px;
+}
+
+.portfolio {
+  background-color: #ECEFF1;
+  color: #000000;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.portfolio .container {
+  width: 920px;
+  margin: 0 auto;
+}
+
+.portfolio-contents .item1 {
+  background-image: url(../img/sketch.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 300px;
+  float: left;
+  margin-right: 10px;
+}
+
+.portfolio-contents .item2 {
+  background-image: url(../img/websuku.png);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 300px;
+  float: left;
+  margin-right: 10px;
+}
+
+.portfolio-contents .item3 {
+  background-image: url(../img/write.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 300px;
+  float: left;
+  margin-right: 10px;
+}
+
+.portfolio-contents .item4 {
+  background-image: url(../img/webcamp.png);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 300px;
+  float: left;
+  margin-right: 10px;
+}
+
+.portfolio-contents .item5 {
+  background-image: url(../img/talk.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 300px;
+  float: left;
+  margin-right: 10px;
+}
+
+.portfolio-contents .item6 {
+  background-image: url(../img/webcamp-mother.png);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 300px;
+  float: left;
+  margin-right: 10px;
+}
+
+.portfolio-contents .portfolio-item:nth-child(-n+3) {
+  margin-bottom: 10px;
+}
+
+.portfolio-contents .portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
