@@ -4,6 +4,18 @@ $site-color: #d77fa1;
 $point-color: #e6b2c6;
 $background-color: #d6e5fa;
 
+//media
+$breakpoints: (
+  'sm': 'screen and (max-width: 767px)',
+  'md': 'screen and (min-width: 768px)'
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
 // 全体
 body {
   font-family: "Yu Gothic", "游ゴシック体";
