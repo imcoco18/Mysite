@@ -122,19 +122,19 @@ header {
   }
 }
 .portfolio-contents {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   & a:hover {
     opacity: 0.8;
   }
-  & .item {
+  & img {
     height: 250px;
     width: 300px;
     float: left;
-    margin-right: 10px;
+    
   }
-  & .item::nth-child(3n) {
-    margin-right: 0;
-  }
+
 
   // & .item1 {
   //   height: 250px;

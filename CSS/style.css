@@ -115,19 +115,20 @@ header a {
   width: 920px;
 }
 
+.portfolio-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .portfolio-contents a:hover {
   opacity: 0.8;
 }
 
-.portfolio-contents .item {
+.portfolio-contents img {
   height: 250px;
   width: 300px;
   float: left;
-  margin-right: 10px;
-}
-
-.portfolio-contents .item::nth-child(3n) {
-  margin-right: 0;
 }
 
 .portfolio-contents .portfolio-item:nth-child(-n+3) {
