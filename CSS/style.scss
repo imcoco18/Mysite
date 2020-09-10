@@ -123,66 +123,95 @@ header {
 }
 .portfolio-contents {
 
-  & .item1 {
-    background-image: url(../img/sketch.jpg);
-    background-size: cover;
-    background-position: center;
+  & a:hover {
+    opacity: 0.8;
+  }
+  & .item {
     height: 250px;
     width: 300px;
     float: left;
     margin-right: 10px;
   }
-  & .item2 {
-    background-image: url(../img/websuku.png);
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    width: 300px;
-    float: left;
-    margin-right: 10px;
+  & .item::nth-child(3n) {
+    margin-right: 0;
   }
-  & .item3 {
-    background-image: url(../img/write.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    width: 300px;
-    float: left;
-    margin-right: 10px;
-  }
-  & .item4 {
-    background-image: url(../img/webcamp.png);
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    width: 300px;
-    float: left;
-    margin-right: 10px;
-  }
-  & .item5 {
-    background-image: url(../img/talk.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    width: 300px;
-    float: left;
-    margin-right: 10px;
-  }
-  & .item6 {
-    background-image: url(../img/webcamp-mother.png);
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    width: 300px;
-    float: left;
-    margin-right: 10px;
-  }
+
+  // & .item1 {
+  //   height: 250px;
+  //   width: 300px;
+  //   float: left;
+  //   margin-right: 10px;
+  // }
+  // & .item2 {
+  //   height: 250px;
+  //   width: 300px;
+  //   float: left;
+  //   margin-right: 10px;
+  // }
+  // & .item3 {
+  //   height: 250px;
+  //   width: 300px;
+  //   float: left;
+  //   margin-right: 10px;
+  // }
+  // & .item4 {
+  //   height: 250px;
+  //   width: 300px;
+  //   float: left;
+  //   margin-right: 10px;
+  // }
+  // & .item5 {
+  //   height: 250px;
+  //   width: 300px;
+  //   float: left;
+  //   margin-right: 10px;
+  // }
+  // & .item6 {
+  //   height: 250px;
+  //   width: 300px;
+  //   float: left;
+  //   margin-right: 10px;
+  // }
   & .portfolio-item:nth-child(-n+3) {
     margin-bottom: 10px;
   }
   & .portfolio-item:nth-child(3n) {
     margin-right: 0;
   }
+}
+
+// modal
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+
+  & .big_img {
+    position: absolute;
+    width: 80%;
+    min-width: 800px;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  & .close_btn {
+    color: $point-color;
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+
+    & a {
+      color:$point-color;
+      text-decoration: none;
+    }
+  }
+
 }
 
 //feature

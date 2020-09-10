@@ -27,3 +27,29 @@ $(function(){
     return false;
   });
 });
+
+//portfolio modal
+$('.portfolio-contents a').click(function(){
+  var imgSrc = $(this).children().attr('src');
+  $('.big_img').children().attr('src', imgSrc);
+  $('.modal').fadeIn();
+  $('body, html').css('overflow-y','hidden');
+  $('#page_top').css('display','none');
+  return false
+});
+
+  // $('.portfolio-contents a').click(function() {
+  // $('body').addClass('is-fixed');
+  //   $('.modal-inner').html($(this).prop('outerHTML'));
+  //   $('.modal').fadeIn();
+  // });
+  // $('.modal, .modal-inner').click(function() {
+  //     $('.modal').fadeOut();
+  //     $('body').removeClass('is-fixed');
+  // });
+
+$('.close_btn').click(function() {
+  $('.modal').fadeOut();
+  $('body, html').css('overflow-y', 'visible');
+  return false
+});

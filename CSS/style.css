@@ -115,64 +115,19 @@ header a {
   width: 920px;
 }
 
-.portfolio-contents .item1 {
-  background-image: url(../img/sketch.jpg);
-  background-size: cover;
-  background-position: center;
+.portfolio-contents a:hover {
+  opacity: 0.8;
+}
+
+.portfolio-contents .item {
   height: 250px;
   width: 300px;
   float: left;
   margin-right: 10px;
 }
 
-.portfolio-contents .item2 {
-  background-image: url(../img/websuku.png);
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  width: 300px;
-  float: left;
-  margin-right: 10px;
-}
-
-.portfolio-contents .item3 {
-  background-image: url(../img/write.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  width: 300px;
-  float: left;
-  margin-right: 10px;
-}
-
-.portfolio-contents .item4 {
-  background-image: url(../img/webcamp.png);
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  width: 300px;
-  float: left;
-  margin-right: 10px;
-}
-
-.portfolio-contents .item5 {
-  background-image: url(../img/talk.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  width: 300px;
-  float: left;
-  margin-right: 10px;
-}
-
-.portfolio-contents .item6 {
-  background-image: url(../img/webcamp-mother.png);
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  width: 300px;
-  float: left;
-  margin-right: 10px;
+.portfolio-contents .item::nth-child(3n) {
+  margin-right: 0;
 }
 
 .portfolio-contents .portfolio-item:nth-child(-n+3) {
@@ -181,6 +136,39 @@ header a {
 
 .portfolio-contents .portfolio-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.modal .big_img {
+  position: absolute;
+  width: 80%;
+  min-width: 800px;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.modal .close_btn {
+  color: #e6b2c6;
+  font-size: 40px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.modal .close_btn a {
+  color: #e6b2c6;
+  text-decoration: none;
 }
 
 .feature .container {
