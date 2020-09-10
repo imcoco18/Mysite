@@ -1,7 +1,8 @@
-$font-color: #FAFAFA;
-$font-color2: #000000;
-$site-color: #EC715F;
-$background-color: #ECEFF1;
+$font-color: #fef6fb;
+$font-color2: #251f44;
+$site-color: #d77fa1;
+$point-color: #e6b2c6;
+$background-color: #d6e5fa;
 
 // 全体
 body {
@@ -34,7 +35,7 @@ body {
   }
   & .title::after {
     content: "";
-    background-color: $site-color;
+    background-color: $point-color;
     height: 3px;
     width: 70px;
     display: block;
@@ -61,12 +62,14 @@ body {
 //header
 header {
   background-color: $site-color;
-  color: $font-color;
   height: 70px;
 
   & .container {
     width: 1024px;
     margin: 0 auto;
+  }
+  & a {
+    color: $font-color;
   }
 }
 .navbar {
@@ -239,6 +242,10 @@ header {
   & .container {
     width: 800px;
   }
+  & a {
+    color: $font-color2;
+    border-bottom: 1px solid #000;
+  }
 }
 
 .contact-left {
@@ -271,5 +278,33 @@ footer {
   height: 60px;
   & .footer-sub {
     font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+  }
+}
+
+//page-top
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+
+  & a {
+    background-color: $point-color;
+    color: $font-color;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px gray;
+  }
+  & a:hover {
+    background-color: $background-color;
+    text-decoration: none;
+  }
+  & a:active {
+    box-shadow: 0 0 16px gray;
+    padding: 17px;
   }
 }

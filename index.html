@@ -12,13 +12,13 @@
   <header>
     <div class="container clear">
       <nav class="navbar">
-        <img src="./img/logo.png" alt="header-logo">
+        <a href="#"><img src="./img/logo.png" alt="header-logo"></a>
         <div class="nav-left">
           <ul class="nav-contents">
-            <li class="nav-item">Portfolio</li>
-            <li class="nav-item">Feature</li>
-            <li class="nav-item">Profile</li>
-            <li class="nav-item">Contact</li>
+            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a href="#feature">Feature</a></li>
+            <li class="nav-item"><a href="#profile">Profile</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -29,7 +29,7 @@
       <h1 class="main-title">Lorem Ipsum</h1>
       <p class="main-subtitle">simply dummy text of the printing</p>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
       <div class="container section clear">
         <h2 class="title">Portfolio</h2>
         <p class="subtitle">It is a long established fact that a reader will be distracted by the readable<br>
@@ -37,16 +37,18 @@
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
         <div class="portfolio-contents">
-          <div class="portfolio-item item1"></div>
-          <div class="portfolio-item item2"></div>
-          <div class="portfolio-item item3"></div>
-          <div class="portfolio-item item4"></div>
-          <div class="portfolio-item item5"></div>
-          <div class="portfolio-item item6"></div>
+          <div class="portfolio-item item1" id="item1-show"></div>
+          <div class="portfolio-item item2" id="item2-show"></div>
+          <div class="portfolio-item item3" id="item3-show"></div>
+          <div class="portfolio-item item4" id="item4-show"></div>
+          <div class="portfolio-item item5" id="item5-show"></div>
+          <div class="portfolio-item item6" id="item6-show"></div>
         </div>
       </div>
     </div>
-    <div class="feature">
+    
+
+    <div class="feature" id="feature">
       <div class="container section">
         <h2 class="title">Feature</h2>
         <p class="subtitle">It is a long established fact that a reader will be distracted by the readable<br>
@@ -72,7 +74,7 @@
         </div>
       </div>
     </div>
-    <div class="profile ">
+    <div class="profile" id="profile">
       <div class="container section clear">
         <h2 class="title">Profile</h2>
         <p class="subtitle">It is a long established fact that a reader will be distracted by the readable<br>
@@ -92,7 +94,7 @@
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="container section clear">
         <h2 class="title">Contact</h2>
         <p class="subtitle">It is a long established fact that a reader will be distracted by the readable<br>
@@ -125,5 +127,11 @@
       <p class="footer-sub">©︎ 2017 WebCamp</p>
     </div>
   </footer>
+  <div id="page_top"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+  <!-- jQueryのライブラリー本体を読み込む -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!-- 必ずjQuery本体を読み込んだ後にjQueryで書いたファイルを読み込む-->
+<script src="js/practice.js"></script>
 </body>
 </html>

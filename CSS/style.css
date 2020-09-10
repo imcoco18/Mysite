@@ -32,7 +32,7 @@ body .title {
 
 body .title::after {
   content: "";
-  background-color: #EC715F;
+  background-color: #e6b2c6;
   height: 3px;
   width: 70px;
   display: block;
@@ -56,14 +56,17 @@ body .bold2 {
 }
 
 header {
-  background-color: #EC715F;
-  color: #FAFAFA;
+  background-color: #d77fa1;
   height: 70px;
 }
 
 header .container {
   width: 1024px;
   margin: 0 auto;
+}
+
+header a {
+  color: #fef6fb;
 }
 
 .navbar img {
@@ -88,7 +91,7 @@ header .container {
   background-size: cover;
   background-position: center;
   height: 650px;
-  color: #FAFAFA;
+  color: #fef6fb;
   text-align: center;
 }
 
@@ -103,8 +106,8 @@ header .container {
 }
 
 .portfolio {
-  background-color: #ECEFF1;
-  color: #000000;
+  background-color: #d6e5fa;
+  color: #251f44;
   text-align: center;
 }
 
@@ -205,7 +208,7 @@ header .container {
 }
 
 .profile {
-  background-color: #ECEFF1;
+  background-color: #d6e5fa;
 }
 
 .profile .container {
@@ -231,6 +234,11 @@ header .container {
 
 .contact .container {
   width: 800px;
+}
+
+.contact a {
+  color: #251f44;
+  border-bottom: 1px solid #000;
 }
 
 .contact-left {
@@ -262,11 +270,40 @@ header .container {
 }
 
 footer {
-  background-color: #EC715F;
-  color: #FAFAFA;
+  background-color: #d77fa1;
+  color: #fef6fb;
   height: 60px;
 }
 
 footer .footer-sub {
   font-size: 16px;
+  text-align: center;
+  line-height: 60px;
+}
+
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+
+#page_top a {
+  background-color: #e6b2c6;
+  color: #fef6fb;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px gray;
+}
+
+#page_top a:hover {
+  background-color: #d6e5fa;
+  text-decoration: none;
+}
+
+#page_top a:active {
+  box-shadow: 0 0 16px gray;
+  padding: 17px;
 }
