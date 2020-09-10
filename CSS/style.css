@@ -22,7 +22,7 @@ body img {
 
 body .section {
   margin: 0 auto;
-  padding: 90px 0 90px 0;
+  padding: 90px 0;
 }
 
 body .title {
@@ -204,6 +204,10 @@ header .container {
   margin: 0 10px;
 }
 
+.profile {
+  background-color: #ECEFF1;
+}
+
 .profile .container {
   width: 1024px;
 }
@@ -223,4 +227,46 @@ header .container {
 .my-profile .profile-right {
   width: 50%;
   float: right;
+}
+
+.contact .container {
+  width: 800px;
+}
+
+.contact-left {
+  width: 50%;
+  float: left;
+}
+
+.contact-right {
+  width: 50%;
+  float: right;
+}
+
+.contact-right .fab {
+  font-size: 50px;
+}
+
+.contact-right .fa-twitter {
+  margin: 0 20px;
+}
+
+.contact-item1 {
+  margin: 0 auto;
+  width: 180px;
+}
+
+.contact-item2 {
+  margin: 0 auto;
+  width: 180px;
+}
+
+footer {
+  background-color: #EC715F;
+  color: #FAFAFA;
+  height: 60px;
+}
+
+footer .footer-sub {
+  font-size: 16px;
 }

@@ -25,7 +25,7 @@ body {
 
   & .section {
     margin: 0 auto;
-    padding: 90px 0 90px 0;
+    padding: 90px 0;
   }
 
   & .title {
@@ -210,7 +210,7 @@ header {
 
 //profile
 .profile {
-
+  background-color: $background-color;
   & .container {
     width: 1024px;
   }
@@ -221,7 +221,6 @@ header {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    
   }
   & .profile-left {
     width: 50%;
@@ -232,6 +231,45 @@ header {
     width: 50%;
     float: right;
   }
+}
 
+//contact
+.contact {
 
+  & .container {
+    width: 800px;
+  }
+}
+
+.contact-left {
+  width: 50%;
+  float: left;
+}
+.contact-right {
+  width: 50%;
+  float: right;
+  & .fab {
+    font-size: 50px;
+  }
+  & .fa-twitter {
+    margin: 0 20px;
+  }
+}
+.contact-item1 {
+  margin: 0 auto;
+  width: 180px;
+}
+.contact-item2 {
+  margin: 0 auto;
+  width: 180px;
+}
+
+//footer
+footer {
+  background-color: $site-color;
+  color: $font-color;
+  height: 60px;
+  & .footer-sub {
+    font-size: 16px;
+  }
 }
