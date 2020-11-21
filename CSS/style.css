@@ -87,11 +87,10 @@ header a {
 }
 
 .main-visual {
-  background-image: url(../img/mv.png);
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(255, 255, 255, 0) 50%, #d6e5fa), url(../img/花1118.jpg) center center/cover no-repeat;
   height: 650px;
-  color: #fef6fb;
+  color: #251f44;
+  text-shadow: 2px 2px 4px #fef6fb;
   text-align: center;
 }
 
@@ -206,19 +205,24 @@ header a {
 
 .my-profile img {
   width: 250px;
-  height: 250px;
+  height: 280px;
   border-radius: 50%;
 }
 
 .my-profile .profile-left {
-  width: 50%;
+  width: 55%;
   float: left;
   text-align: center;
 }
 
 .my-profile .profile-right {
-  width: 50%;
+  width: 45%;
   float: right;
+  padding-top: 30px;
+}
+
+.my-profile .profile-right .pink {
+  color: #e6b2c6;
 }
 
 .contact .container {

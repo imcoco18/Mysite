@@ -105,11 +105,12 @@ header {
 
 // main-visual
 .main-visual {
-  background-image: url(../img/mv.png);
-  background-size: cover;
-  background-position: center;
+  // background-image: url(../img/花1118.jpg);
+
+  background: linear-gradient(rgba(255,255,255,0) 50%, $background-color) ,url(../img/花1118.jpg) center center / cover no-repeat;
   height: 650px;
-  color: $font-color;
+  color: $font-color2;
+  text-shadow: 2px 2px 4px#fef6fb;
   text-align: center;
 
   & .main-title {
@@ -263,17 +264,22 @@ header {
 
   & img {
     width: 250px;
-    height: 250px;
+    height: 280px;
     border-radius: 50%;
   }
   & .profile-left {
-    width: 50%;
+    width: 55%;
     float: left;
     text-align: center;
   }
   & .profile-right {
-    width: 50%;
+    width: 45%;
     float: right;
+    padding-top: 30px;
+
+    & .pink {
+      color: $point-color;
+    }
   }
 }
 
